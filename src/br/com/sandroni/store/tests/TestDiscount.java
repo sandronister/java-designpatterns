@@ -11,6 +11,10 @@ public class TestDiscount {
         Budget b1 = new Budget(new BigDecimal("250"),6);
         Budget b2 = new Budget(new BigDecimal("600"),4);
         Budget b3 = new Budget(new BigDecimal("450"),2);
+        b2.aprove();
+        b2.setExtraDiscount();
+
+        b1.setExtraDiscount();
 
         CalcDiscount calc = new CalcDiscount();
 
